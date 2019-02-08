@@ -3,6 +3,7 @@
   "version": "0.18.2",
   "description": "Transpile an enriched GraphQL string schema (e.g. support for metadata, inheritance, generic types, ...) into the standard string schema understood by graphql.js and the Apollo server client.",
   "main": "./src/graphqls2s.js",
+  "types": "./src/graphqls2s.d.ts",
   "scripts": {
     "test": "mocha ./test/node/*.js",
     "test:dev": "MOCHA_ENV=dev mocha ./test/node/*.js",
@@ -65,6 +66,10 @@
     "shortid": "^2.2.8"
   },
   "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/graphql": "^14.0.5",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.12.21",
     "babel-core": "^6.25.0",
     "babel-loader": "^7.0.0",
     "babel-plugin-transform-runtime": "^6.23.0",
@@ -73,6 +78,7 @@
     "eslint": "^4.0.0",
     "mocha": "^3.4.2",
     "standard-version": "^4.0.0",
+    "typescript": "^3.3.1",
     "uglifyjs-webpack-plugin": "^0.4.3",
     "webpack": "^2.6.1"
   }
